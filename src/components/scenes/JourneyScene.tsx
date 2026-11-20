@@ -262,7 +262,7 @@ export function JourneyScene() {
       <ScrollReveal
         className="journey-heading"
       >
-        <p className="eyebrow">Four days. Countless memories.</p>
+        <p className="eyebrow">Two days. Countless memories.</p>
         <h2>The celebrations</h2>
         <p className="script">A journey to forever</p>
         <Ornament />

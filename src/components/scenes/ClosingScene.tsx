@@ -6,7 +6,7 @@ import { Ornament, Botanical, VerticalVenueSeparator, LINK_ARROW } from "../ui/O
 
 export function ClosingScene() {
   const { locations } = weddingData;
-  const { familyResidence, sharmaFarms } = locations;
+  const { residenciaFamiliar, sharmaFarms } = locations;
   const [activeMap, setActiveMap] = useState<string | null>(null);
 
   return (
@@ -31,9 +31,9 @@ export function ClosingScene() {
           >
             <div className="venue-meta">
               <p className="venue-tag">CEREMONY VENUE</p>
-              <h4 className="venue-name">{familyResidence.name}</h4>
+              <h4 className="venue-name">{residenciaFamiliar.name}</h4>
               <div className="venue-address-lines">
-                {familyResidence.address.map((line, idx) => (
+                {residenciaFamiliar.address.map((line, idx) => (
                   <p key={idx} className="venue-address-line">
                     {line}
                   </p>
@@ -45,11 +45,11 @@ export function ClosingScene() {
               className={`map-stationery ${activeMap === "family" ? "map-interactive" : ""}`}
               onClick={() => setActiveMap("family")}
             >
-              {familyResidence.embedUrl ? (
+              {residenciaFamiliar.embedUrl ? (
                 <iframe
                   key="map-family-residence"
-                  src={familyResidence.embedUrl}
-                  title={`Wedding venue: ${familyResidence.name}`}
+                  src={residenciaFamiliar.embedUrl}
+                  title={`Wedding venue: ${residenciaFamiliar.name}`}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
@@ -58,7 +58,7 @@ export function ClosingScene() {
                 <div
                   className="map-awaiting"
                   role="img"
-                  aria-label={`${familyResidence.name} map location`}
+                  aria-label={`${residenciaFamiliar.name} map location`}
                 >
                   <svg viewBox="0 0 360 240" aria-hidden="true">
                     <path d="M-10 160Q80 20 160 140T370 60M30-10Q100 90 30 250M190-10Q140 160 290 250M-10 60Q210 90 370 220" />
@@ -68,7 +68,7 @@ export function ClosingScene() {
                       d="M180 86c-22 0-24 24 0 45 24-21 22-45 0-45Zm0 9a7 7 0 1 1 0 14 7 7 0 0 1 0-14Z"
                     />
                   </svg>
-                  <p>{familyResidence.name}</p>
+                  <p>{residenciaFamiliar.name}</p>
                   <span>Village & Post Rudrapur</span>
                 </div>
               )}
@@ -84,7 +84,7 @@ export function ClosingScene() {
 
             <a
               className="stationery-action map-directions"
-              href={familyResidence.googleMapsUrl}
+              href={residenciaFamiliar.googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
             >

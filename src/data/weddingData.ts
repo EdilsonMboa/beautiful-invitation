@@ -4,7 +4,7 @@ export type ScheduleItem = {
   text?: string; // For text-based items e.g. "Followed by Dinner" or "Vivah Sanskar — Shubh Lagnanusar"
 };
 
-export type LocationId = "familyResidence" | "sharmaFarms";
+export type LocationId = "residenciaFamiliar" | "sharmaFarms";
 
 export type VenueLocation = {
   id: LocationId;
@@ -48,29 +48,29 @@ export type WeddingDateConfig = {
 
 const wedding: WeddingDateConfig = {
   // Set the confirmed year here. Never infer the next occurrence automatically.
-  year: 2026,
-  month: 11,
-  day: 2,
-  dateLabel: "02 November",
+  year: 2027,
+  month: 9,
+  day: 5,
+  dateLabel: "05 September",
   // Local HH:mm ceremony time. Null counts to the start of the wedding DAY,
   // once the year is confirmed; midnight is never presented as a ceremony time.
   time: null,
-  timezone: "Asia/Kolkata",
-  todayMessage: "Our forever begins today.",
-  pastMessage: "And so our forever began.",
+  timezone: "Africa/Mozambique",
+  todayMessage: "O nosso para sempre começa hoje.",
+  pastMessage: "E assim começou o nosso para sempre.",
 };
 
 export const weddingData = {
-  couple: { groom: "Manas", bride: "Anchal" },
+  couple: { groom: "Edilson", bride: "Annae" },
   wedding,
   familyDetails: "",
   familySignOff: [
     {
-      heading: "WITH WARMTH AND AFFECTION",
-      names: ["Mr. Jagdish Chandra Sharma", "Mr. Randhir Singh Verma"],
+      heading: "COM CARINHO E AFECTO",
+      names: ["Sr. Jose Carlos Mboa", "Sr. Serage Anfai"],
     },
     {
-      heading: "EAGERLY AWAITING YOUR GRACIOUS PRESENCE",
+      heading: "AGUARDANDO ANSIOSAMENTE A SUA GRACIOSA PRESENÇA",
       names: [
         "Mrs. Rakhi & Mr. Achal Sharma",
         "Mrs. Shikha & Mr. Vishal Sharma",
@@ -78,11 +78,11 @@ export const weddingData = {
       ],
     },
   ],
-  closing: { message: "Join us as we begin our forever." },
+  closing: { message: "Junte-se a nós enquanto começamos o nosso para sempre." },
   locations: {
-    familyResidence: {
-      id: "familyResidence" as const,
-      name: "Family Residence",
+    residenciaFamiliar: {
+      id: "residenciaFamiliar" as const,
+      name: "Residência Familiar",
       address: [
         "Village & Post Rudrapur",
         "Vikas Nagar, Dehradun",
@@ -114,7 +114,7 @@ export const weddingData = {
   events: [
     {
       id: "mata",
-      locationId: "familyResidence" as const,
+      locationId: "residenciaFamiliar" as const,
       title: "Mata Ki Chowki",
       date: "30 October",
       shortDate: "30 OCTOBER",
@@ -141,7 +141,7 @@ export const weddingData = {
     },
     {
       id: "mehendi",
-      locationId: "familyResidence" as const,
+      locationId: "residenciaFamiliar" as const,
       title: "Mehandi & Cocktail",
       date: "31 October",
       shortDate: "31 OCTOBER",
@@ -167,7 +167,7 @@ export const weddingData = {
     },
     {
       id: "haldi",
-      locationId: "familyResidence" as const,
+      locationId: "residenciaFamiliar" as const,
       title: "Haldi Hath & Mangal Snan",
       date: "01 November",
       shortDate: "01 NOVEMBER",
