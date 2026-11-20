@@ -70,9 +70,9 @@ export const weddingData = {
     {
       heading: "AGUARDANDO ANSIOSAMENTE A SUA GRACIOSA PRESENÇA",
       names: [
-        "Mrs. Rakhi & Mr. Achal Sharma",
-        "Mrs. Shikha & Mr. Vishal Sharma",
-        "Ansh & Manika",
+        "Sr. Pai do Noivo & Sra. Mae do Noivo",
+        "Sr. Pai da Noiva & Sra. Mae da Noiva",
+        "Noivo & Noiva",
       ],
     },
   ],
