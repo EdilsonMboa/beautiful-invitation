@@ -15,7 +15,7 @@ const config = {
   day: 2,
   dateLabel: "02 November",
   time: null,
-  timezone: "Asia/Kolkata",
+  timezone: "Africa/Maputo",
   todayMessage: "Today",
   pastMessage: "Past",
 };
