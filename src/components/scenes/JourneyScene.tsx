@@ -150,7 +150,7 @@ function JourneyStop({
 
           {/* 5. Discover the celebration link */}
           <a href={`#${event.id}`} className="journey-arrow">
-            Discover the celebration <span aria-hidden="true">{LINK_ARROW}</span>
+            Saiba mais <span aria-hidden="true">{LINK_ARROW}</span>
           </a>
         </div>
       </div>

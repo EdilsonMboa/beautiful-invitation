@@ -39,7 +39,7 @@ export function ScratchRevealScene({
         <img src="/images/opening-bg.webp" srcSet="/images/opening-bg-640.webp 640w, /images/opening-bg.webp 1024w" sizes="(max-width: 760px) 100vw, 760px" width={1024} height={1536} decoding="async" alt="" fetchPriority="high" />
       </div>
       <Botanical className="scratch-foreground" />
-      <p className="eyebrow">A secret, just for you</p>
+      <p className="eyebrow">Um segredo, só para você</p>
       <div className="scratch-card-drift">
         <div className="date-stationery">
           <div className="stationery-rule" />
@@ -53,14 +53,14 @@ export function ScratchRevealScene({
           </p>
           <h2 id="scratch-title" className="scratch-instruction" tabIndex={-1}>
             {revealed
-              ? "The day we begin forever"
+              ? "O dia em que começamos o para sempre"
               : reduced
-                ? "A beautiful date awaits"
-                : "Scratch to reveal our wedding date"}
+                ? "Uma bela data aguarda"
+                : "Raspe para revelar a data do nosso casamento"}
           </h2>
           <div className="foil-window">
             <div className="date-beneath" aria-hidden={!revealed}>
-              <p className="eyebrow">Save the date</p>
+              <p className="eyebrow">Reserve a data</p>
               <strong className="revealed-day">{day}</strong>
               <span className="revealed-month">{month}</span>
               {weddingData.wedding.year && (
@@ -115,10 +115,10 @@ export function ScratchRevealScene({
                 aria-labelledby="countdown-title"
               >
                 <motion.div className="countdown-divider" initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: reduced ? 0 : 0.8 }} />
-                <h3 id="countdown-title">Until we say <em>I do</em></h3>
+                <h3 id="countdown-title">Até dizermos <em>o sim</em></h3>
                 <WeddingCountdown />
                 <motion.a href="#journey" className="scroll-hint" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: reduced ? 0 : 1.2, duration: 0.6 }}>
-                  Continue the journey <span>↓</span>
+                  Continuar a jornada <span>↓</span>
                 </motion.a>
               </motion.div>
             )}
@@ -127,7 +127,7 @@ export function ScratchRevealScene({
             {revealed ? (
               <>
                 <p className="sr-only" role="status">
-                  Our wedding date is {weddingData.wedding.dateLabel}
+                  A data do nosso casamento é {weddingData.wedding.dateLabel}
                   {weddingData.wedding.year
                     ? ` ${weddingData.wedding.year}`
                     : ""}
@@ -138,15 +138,15 @@ export function ScratchRevealScene({
               <>
                 <p className="scratch-help">
                   {reduced
-                    ? "A little touch. A beautiful beginning."
-                    : "Gently brush away the golden veil."}
+                    ? "Um pequeno toque. Um belo começo."
+                    : "Passe suavemente para tirar o véu dourado."}
                 </p>
                 <button
                   className="stationery-action tap-reveal"
                   onClick={onReveal}
-                  aria-label="Tap to reveal our wedding date"
+                  aria-label="Toque para revelar a data do nosso casamento"
                 >
-                  {reduced ? "Tap to reveal" : "Or, reveal with a tap"}{" "}
+                  {reduced ? "Toque para revelar" : "Ou revele com um toque"}{" "}
                   <span>{LINK_ARROW}</span>
                 </button>
               </>
@@ -155,7 +155,7 @@ export function ScratchRevealScene({
         </div>
       </div>
       <p className="script scratch-footnote">
-        Some moments are worth uncovering.
+        Alguns momentos valem a pena descobrir.
       </p>
     </section>
   );

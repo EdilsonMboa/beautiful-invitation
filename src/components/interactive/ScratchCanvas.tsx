@@ -140,9 +140,9 @@ function paintFoil(ctx: CanvasRenderingContext2D, w: number, h: number) {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.font = "italic 26px Georgia";
-  ctx.fillText("Our forever", w / 2, h / 2 - 10);
+  ctx.fillText("Para Sempre", w / 2, h / 2 - 10);
   ctx.font = "10px Georgia";
-  ctx.fillText("W A I T S   W I T H I N", w / 2, h / 2 + 23);
+  ctx.fillText("R A S P E  A Q U I", w / 2, h / 2 + 23);
   ctx.restore();
 }
 
@@ -637,8 +637,8 @@ export function ScratchCanvas({
       >
         {(!ready || reduced) && (
           <div className="foil-fallback">
-            <span>Our forever</span>
-            <small>WAITS WITHIN</small>
+            <span>Nosso para sempre</span>
+            <small>RASPE AQUI</small>
           </div>
         )}
         <canvas
